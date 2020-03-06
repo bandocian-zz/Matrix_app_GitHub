@@ -1,0 +1,4 @@
+rootProject.name = 'githubAPI'
+
+
+enableFeaturePreview('GRADLE_METADATA')
