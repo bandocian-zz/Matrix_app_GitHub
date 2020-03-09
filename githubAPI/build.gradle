@@ -25,5 +25,6 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version" // Required for Kotlin integration
     compile "org.springframework.boot:spring-boot-starter-web"
     implementation "khttp:khttp:$khttp_version"
+    implementation 'com.beust:klaxon:5.0.1'
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
