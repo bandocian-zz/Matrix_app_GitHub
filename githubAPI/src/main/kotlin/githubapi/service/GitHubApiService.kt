@@ -14,12 +14,16 @@ class GitHubApiService {
 
     fun getCommitUrls(username: String): Set<String> {
         val response = get("$githubUrl/users/$username/events")
-        val events = Klaxon().parseArray<Event>(response.text)
-        return events?.filter { it.type == "PushEvent" }
-            ?.flatMap { it.payload.commits }
-            ?.map { it.url }
-            ?.toSet()
-            ?: emptySet()
+        return if(response.statusCode == 200) {
+            val events = Klaxon().parseArray<Event>(response.text)
+            events?.filter { it.type == "PushEvent" }
+                ?.flatMap { it.payload.commits }
+                ?.map { it.url }
+                ?.toSet()
+                ?: emptySet()
+        } else {
+            emptySet()
+        }
     }
 
     fun getStats(urls: Set<String>): List<Stats> {
