@@ -4,6 +4,7 @@ import com.beust.klaxon.Klaxon
 import githubapi.dto.CommitData
 import githubapi.dto.Event
 import githubapi.dto.Stats
+import githubapi.dto.Team
 import khttp.get
 import org.springframework.stereotype.Component
 
@@ -32,8 +33,5 @@ class GitHubApiService {
             Klaxon().parse<CommitData>(response.text)?.stats
         }
     }
-
-//
-
 
 }

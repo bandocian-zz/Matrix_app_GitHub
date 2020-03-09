@@ -1,0 +1,62 @@
+{
+  "teams": [
+    {
+      "teamName": "Separators",
+      "jiraProjectId": 15,
+      "members": [
+        {
+          "name": "Ondrej Matija",
+          "githubUsername": "omatija",
+          "jiraUsername": "ondrej.matija"
+        },
+        {
+          "name": "Veronika Haskova",
+          "githubUsername": "koscovicka",
+          "jiraUsername": "veronika.haskova"
+        },
+        {
+          "name": "Marketa Solanikova",
+          "githubUsername": "msolanikova",
+          "jiraUsername": "marketa.solanikova"
+        },
+        {
+          "name": "Csaba Komives",
+          "githubUsername": "csaba8",
+          "jiraUsername": "csaba.komives"
+        },
+        {
+          "name": "Miroslav Valigura",
+          "githubUsername": "valiguram",
+          "jiraUsername": "miroslav.valigura"
+        }
+      ]
+    },
+    {
+      "teamName": "Ninjas",
+      "jiraProjectId": 25,
+      "members": [
+        {
+          "name": "Lukas Orgovan",
+          "githubUsername": "lorgovan",
+          "jiraUsername": "lukas.orgovan"
+        },
+        {
+          "name": "Tomas Igrini",
+          "githubUsername": "tigrini",
+          "jiraUsername": "tomas.igrini"
+        }
+      ]
+    },
+    {
+      "teamName": "Githubers",
+      "jiraProjectId": 58,
+      "members": [
+        {
+          "name": "Rudolf Repcin",
+          "githubUsername": "rudolf-repcin",
+          "jiraUsername": "rudolf.repcin"
+        }
+      ]
+    }
+  ]
+}
